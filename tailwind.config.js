@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       animation: {
-        "fade-in": "fade-in 0.6s ease-in",
-        "fade-in-up": "fade-in-up 0.6s cubic-bezier(.22,.41,.72,.7)",
-        "fade-in-down": "fade-in-down 0.6s cubic-bezier(.22,.41,.72,.7)",
-        "fade-in-left": "fade-in-left 0.6s cubic-bezier(.22,.41,.72,.7)",
-        "fade-in-right": "fade-in-right 0.6s cubic-bezier(.22,.41,.72,.7)",
+        "fade-in": "fade-in 0.6s ease-in both",
+        "fade-in-up": "fade-in-up 0.6s cubic-bezier(.22,.41,.72,.7) both",
+        "fade-in-down": "fade-in-down 0.6s cubic-bezier(.22,.41,.72,.7) both",
+        "fade-in-left": "fade-in-left 0.6s cubic-bezier(.22,.41,.72,.7) both",
+        "fade-in-right": "fade-in-right 0.6s cubic-bezier(.22,.41,.72,.7) both",
         
         "fade-out": "fade-out 0.6s ease-in-out",
         "fade-out-up": "fade-out-up 0.6s ease-in-out",
@@ -16,11 +16,11 @@ export default {
         "fade-out-left": "fade-out-left 0.6s ease-in-out",
         "fade-out-right": "fade-out-right 0.6s ease-in-out",
 
-        "slide-in-top": "slide-in-top 0.6s ease-in-out",
-        "slide-in-bottom": "slide-in-bottom 0.6s ease-in-out",
-        "slide-in-left": "slide-in-left 0.6s ease-in-out",
-        "slide-in-right": "slide-in-right 0.6s ease-in-out",
-        "zoom-in": "zoom-in 0.6s ease-out",
+        "slide-in-top": "slide-in-top 0.6s ease-in-out both",
+        "slide-in-bottom": "slide-in-bottom 0.6s ease-in-out both",
+        "slide-in-left": "slide-in-left 0.6s ease-in-out both",
+        "slide-in-right": "slide-in-right 0.6s ease-in-out both",
+        "zoom-in": "zoom-in 0.6s ease-out both",
         "zoom-out": "zoom-out 0.6s ease-out",
       },
       keyframes: {

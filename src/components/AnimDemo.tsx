@@ -1,13 +1,14 @@
 import React from "react";
 import { AnimKey, animations } from "../utils/data";
 
-type AnimProp = {
-  animation?: string;
+interface AnimProp  {
+  animation?: AnimKey;
 };
 
+
 const AnimShape: React.FC<AnimProp> = ({ animation }) => {
-  let className: string =  "w-28 h-28 bg-violet-800 rounded-md "
-  if (animation) className += animations[animation as AnimKey];
+  let className: string =  "w-28 h-28 bg-violet-800 rounded-md drop-shadow-xl "
+  if (animation) className += animations[animation];
   return <div className={className}></div>;
 };
 
@@ -25,10 +26,10 @@ const AnimDemo: React.FC<AnimProp> = ({ animation }) => {
 };
 
 
-export const GridAnimDemo: React.FC<AnimProp> = () => {
-    return <div className="animate-slide-in-bottom grid self-center grid-cols-4 gap-10 place-items-center w-3/4">
+export const GridAnimDemo: React.FC = () => {
+    return <div className="animate-slide-in-bottom  grid self-center grid-cols-4 gap-10 place-items-center ">
       {Object.entries(animations).map(([anim]) => (
-        <AnimDemo animation={anim} />
+        <AnimDemo animation={anim as AnimKey} />
       ))}
     </div>
 };
